@@ -13,7 +13,7 @@ export default function Home() {
           <div className="hero-subtitle">Sri Krishna College of Engineering & Technology</div>
           <img className="hero-logo-display" src="/team-logo.png" alt="Hoplites Hero Logo" />
           <h1 className="hero-title"><span>HOPLITES</span></h1>
-          <p className="hero-tagline">EVEHICLE TEAM</p>
+          <p className="hero-tagline">E-VEHICLE TEAM</p>
           <p className="hero-college">Kuniyamuthur, Coimbatore</p>
         </div>
       </div>
