@@ -11,7 +11,7 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-subtitle">Sri Krishna College of Engineering & Technology</div>
-          <img className="hero-logo-display" src="/team-logo.png" alt="Hoplites Hero Logo" />
+          <img className="hero-logo-display" src={`${import.meta.env.BASE_URL}team-logo.png`} alt="Hoplites Hero Logo" />
           <h1 className="hero-title"><span>HOPLITES</span></h1>
           <p className="hero-tagline">E-VEHICLE TEAM</p>
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
           ) : (
             <video
               className="video-embed"
-              src="/team_reels_video.mp4"
+              src={`${import.meta.env.BASE_URL}team_reels_video.mp4`}
               autoPlay
               controls
               style={{ width: '100%', height: '100%', objectFit: 'cover' }}

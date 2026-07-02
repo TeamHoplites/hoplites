@@ -21,7 +21,7 @@ export default function Navbar({ currentPage, setCurrentPage }) {
   return (
     <nav>
       <a className="nav-logo" onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>
-        <img src="/team-logo.png" alt="Hoplites Logo" />
+        <img src={`${import.meta.env.BASE_URL}team-logo.png`} alt="Hoplites Logo" />
         <span>HOPLITES</span>
       </a>
       <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`} id="navLinks">

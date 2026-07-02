@@ -138,7 +138,7 @@ export default function Leadership() {
           <div key={idx} className={`captain-card ${leader.isVice ? 'vice-captain' : 'captain'}`}>
             <div className="captain-photo">
               {leader.photo ? (
-                <span><img src={leader.photo} alt={leader.name} /></span>
+                <span><img src={leader.photo.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${leader.photo}` : leader.photo} alt={leader.name} /></span>
               ) : (
                 <span>👤</span>
               )}
@@ -187,7 +187,7 @@ export default function Leadership() {
                 <div key={memberIdx} className="member-card">
                   <div className="member-photo">
                     {member.photo ? (
-                      <span><img src={member.photo} alt={member.name} /></span>
+                      <span><img src={member.photo.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${member.photo}` : member.photo} alt={member.name} /></span>
                     ) : (
                       <span>👤</span>
                     )}

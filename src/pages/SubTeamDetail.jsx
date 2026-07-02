@@ -50,7 +50,7 @@ export default function SubTeamDetail({ subteamId, onBack }) {
             <div key={idx} className={`member-card ${isLeader ? 'leader' : ''}`}>
               <div className="member-photo">
                 {member.photo ? (
-                  <img src={member.photo} alt={member.name} />
+                  <img src={member.photo.startsWith('/') ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${member.photo}` : member.photo} alt={member.name} />
                 ) : (
                   <span>{isLeader ? '👤' : '👤'}</span>
                 )}

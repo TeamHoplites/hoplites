@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer-logo">
-        <img src="/team-logo.png" alt="Hoplites Footer Logo" />
+        <img src={`${import.meta.env.BASE_URL}team-logo.png`} alt="Hoplites Footer Logo" />
         <span className="footer-name">HOPLITES</span>
       </div>
       <p className="footer-text">SKCET E-Vehicle Team · Kuniyamuthur, Coimbatore</p>
