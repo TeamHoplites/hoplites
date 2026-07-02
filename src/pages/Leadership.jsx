@@ -19,7 +19,7 @@ export default function Leadership() {
       role: '⚔ CAPTAIN',
       name: 'PUBESHVARAN',
       years: '2026 – 2027',
-      photo: '/assets/pubesh_bro.png',
+      photo: '',
       isVice: false,
       instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android'
@@ -49,7 +49,7 @@ export default function Leadership() {
         {
           name: 'Pubeshvaran S G',
           role: 'Ex - Vice Captain',
-          photo: '/assets/pubesh_bro.png',
+          photo: '',
           instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
           linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android'
         }

@@ -52,7 +52,7 @@ export default function SubTeamDetail({ subteamId, onBack }) {
                 {member.photo ? (
                   <img src={member.photo} alt={member.name} />
                 ) : (
-                  <span>{isLeader ? '👑' : '👤'}</span>
+                  <span>{isLeader ? '👤' : '👤'}</span>
                 )}
                 {isLeader && <div className="leader-badge">{member.role}</div>}
               </div>
