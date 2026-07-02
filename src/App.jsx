@@ -7,10 +7,12 @@ import Leadership from './pages/Leadership';
 import Mentors from './pages/Mentors';
 import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
+import LoadingScreen from './components/LoadingScreen';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [selectedSubteamId, setSelectedSubteamId] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
 
   const renderPage = () => {
     switch (currentPage) {
@@ -51,6 +53,7 @@ function App() {
 
   return (
     <>
+      {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
     </>

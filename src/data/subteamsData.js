@@ -44,7 +44,7 @@ export const subteamsData = {
     icon: '⚙️',
     members: [
       { name: 'Shree Hariharakumaran', role: 'leader', photo: '/assets/hariharakumaran.jpeg', instagram: 'https://www.instagram.com/_.just.hari?igsh=MTR0dndzbWoyYWEyaA==3', linkedin: 'https://www.linkedin.com/in/shreehariharakumaran-s-baa3b8329?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-      { name: 'Mithunvant', role: 'member', photo: '/assets/mithunvant.jpeg', instagram: 'https://www.instagram.com/mithunn.13?igsh=MXJ4cTJmbDFpMW13ag==', linkedin: 'https://www.linkedin.com/in/mithun-vant-g-r-56b98037b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Mithunvant', role: 'member', photo: '/assets/mithun.jpg', instagram: 'https://www.instagram.com/mithunn.13?igsh=MXJ4cTJmbDFpMW13ag==', linkedin: 'https://www.linkedin.com/in/mithun-vant-g-r-56b98037b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
     ]
   },
   electrical: {
@@ -58,7 +58,7 @@ export const subteamsData = {
       { name: 'Mohammed Hasan Malik', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Mahadheva', role: 'member', photo: '/assets/mahadeva.jpg', instagram: '#', linkedin: '#' },
       { name: 'Divyaa Shree', role: 'member', photo: '/assets/divyaashree.jpg', instagram: '#', linkedin: '#' },
-      { name: 'Bharanidharan', role: 'member', photo: '/assets/bharanidharan.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Bharanidharan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Srinivas', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Akileasshh', role: 'member', photo: '/assets/akilesshh.jpg', instagram: '#', linkedin: '#' },
     ]
@@ -78,7 +78,7 @@ export const subteamsData = {
     icon: '🔆',
     members: [
       { name: 'Harish', role: 'leader', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Bharanidharan', role: 'member', photo: '/assets/bharanidharan.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Bharanidharan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
     ]
   },
   "suspension and wheel assembly": {
@@ -93,6 +93,7 @@ export const subteamsData = {
       { name: 'Renimol Benita', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Shujith Krishnaa', role: 'member', photo: '/assets/sujithkrishna.jpg', instagram: '#', linkedin: '#' },
       { name: 'Kowshigaan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Sanjay Amirdesh', role: 'member', photo: '', instagram: '#', linkedin: '#' },
     ]
   },
   autonomous: {
