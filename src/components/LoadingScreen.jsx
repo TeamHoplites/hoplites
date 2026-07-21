@@ -6,12 +6,12 @@ export default function LoadingScreen({ onComplete }) {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   const phases = [
-    { threshold: 15, text: 'Calibrating Battery Management System...' },
-    { threshold: 35, text: 'Checking Dual-Motor Telemetry...' },
-    { threshold: 55, text: 'Testing Regenerative Braking...' },
-    { threshold: 75, text: 'Powering Up Inverters...' },
-    { threshold: 90, text: 'Engaging Hoplite Drive Core...' },
-    { threshold: 100, text: 'System Ready!' }
+    { threshold: 15},
+    { threshold: 35},
+    { threshold: 55},
+    { threshold: 75},
+    { threshold: 90},
+    { threshold: 100}
   ];
 
   useEffect(() => {
@@ -52,15 +52,15 @@ export default function LoadingScreen({ onComplete }) {
           <div className="loader-ring inner"></div>
         </div>
         
-        <h2 className="loader-title">HOPLITES</h2>
-        <p className="loader-subtitle">SKCET E-VEHICLE TEAM</p>
+        <h2 className="loader-title">TEAM HOPLITES</h2>
+        <p className="loader-subtitle">E-VEHICLE TEAM</p>
         
         <div className="progress-bar-container">
           <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
         </div>
         
         <div className="progress-details">
-          <span className="phase-text">{phaseText}</span>
+          {/* <span className="phase-text">{phaseText}</span> */}
           <span className="percentage-text">{progress}%</span>
         </div>
       </div>

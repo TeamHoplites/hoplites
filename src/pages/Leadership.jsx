@@ -19,16 +19,16 @@ export default function Leadership() {
       role: '⚔ CAPTAIN',
       name: 'PUBESHVARAN',
       years: '2026 – 2027',
-      photo: '',
+      photo: '/assets/pubesh.jpg',
       isVice: false,
       instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android'
     },
     {
       role: '🛡 VICE CAPTAIN',
-      name: 'Vice Captain Name',
+      name: 'DHIVINASH',
       years: '2026 – 2027',
-      photo: '',
+      photo: '/assets/dhivinash.jpg',
       isVice: true,
       instagram: '#',
       linkedin: '#'
@@ -49,7 +49,7 @@ export default function Leadership() {
         {
           name: 'Pubeshvaran S G',
           role: 'Ex - Vice Captain',
-          photo: '',
+          photo: '/assets/pubesh.jpg',
           instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
           linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android'
         }
@@ -118,17 +118,17 @@ export default function Leadership() {
     <div className="page active" id="leadership">
       <div className="page-hero">
         <div className="section-label">Command</div>
-        <h2 className="section-title" style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
+        <h2 className="section-title" style={{ fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
           Leadership
         </h2>
         <div className="section-divider"></div>
         <p style={{ color: 'var(--text-muted)', maxWidth: '550px', margin: '1rem auto 0', fontSize: '0.9rem', lineHeight: '1.7' }}>
-          The warriors who lead the Hoplites into battle on and off the track.
+          Leading the Hoplites on and off the track with engineering excellence.
         </p>
       </div>
 
       <div style={{ textAlign: 'center', padding: '1rem 2rem 0' }}>
-        <span style={{ fontFamily: "'Cinzel',serif", fontSize: '0.7rem', letterSpacing: '4px', color: 'var(--gold)', textTransform: 'uppercase' }}>
+        <span style={{ fontSize: '0.8rem', letterSpacing: '2px', color: 'var(--primary)', textTransform: 'uppercase', fontWeight: '600' }}>
           Current Season
         </span>
       </div>
@@ -145,7 +145,7 @@ export default function Leadership() {
               <div className="captain-photo-overlay"></div>
               <div
                 className="captain-badge"
-                style={leader.isVice ? { background: 'linear-gradient(135deg,var(--red),#8B0000)' } : undefined}
+                style={leader.isVice ? { background: 'linear-gradient(135deg, var(--accent), #065F46)' } : undefined}
               >
                 {leader.role}
               </div>
@@ -181,7 +181,7 @@ export default function Leadership() {
 
         {previousLeaders.map((group, idx) => (
           <div key={idx} className="prev-year-group">
-            <div className="prev-year-title">⚔ {group.year}</div>
+            <div className="prev-year-title">Season {group.year}</div>
             <div className="prev-leaders-grid">
               {group.members.map((member, memberIdx) => (
                 <div key={memberIdx} className="member-card">
@@ -196,7 +196,7 @@ export default function Leadership() {
                     <div className="member-name">{member.name}</div>
                     <div
                       className="member-role"
-                      style={member.role.includes('Vice') ? { color: 'var(--red-bright)' } : { color: 'var(--gold)' }}
+                      style={member.role.includes('Vice') ? { color: 'var(--accent)' } : { color: 'var(--primary)' }}
                     >
                       {member.role}
                     </div>

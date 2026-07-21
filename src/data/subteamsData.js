@@ -4,8 +4,12 @@ export const subteamsData = {
     desc: 'Our racing pilots — the warriors behind the wheel.',
     icon: '🏁',
     members: [
-      { name: 'Pubeshvaran', role: 'Captain', photo: '', instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Pubeshvaran', role: 'member', photo: '/assets/pubesh.jpg', instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
       { name: 'Driver Name', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'Name', role: 'Role', years: 'YEAR' },
+      { name: 'Name', role: 'Role', years: 'YEAR' }
     ]
   },
   chassis: {
@@ -13,10 +17,14 @@ export const subteamsData = {
     desc: 'Responsible for designing and building the structural frame and geometry of the kart.',
     icon: '🔩',
     members: [
-      { name: 'Pubeshvaran', role: 'leader', photo: '', instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-      { name: 'Shobanraj', role: 'member', photo: '/assets/shobanraj.JPG', instagram: 'https://www.instagram.com/being._.shoban?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/s-shoban-raj-a18150326?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-      { name: 'Anbarasar', role: 'member', photo: '', instagram: 'https://www.instagram.com/simon_ak0227?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/anbarasar-a-k-937576380?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Shobanraj', role: 'leader', photo: '/assets/shobanraj.JPG', instagram: 'https://www.instagram.com/being._.shoban?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/s-shoban-raj-a18150326?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Pubeshvaran', role: 'member', photo: '/assets/pubesh.jpg', instagram: 'https://www.instagram.com/pub3sh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/pubeshvaran-s-g-9a26b7318?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Anbarasar', role: 'member', photo: '/assets/anbarasar.jpg', instagram: 'https://www.instagram.com/simon_ak0227?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/anbarasar-a-k-937576380?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
       { name: 'Hari Mukesh', role: 'member', photo: '/assets/harimukesh.jpg', instagram: 'https://www.instagram.com/violence_mukesh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', linkedin: 'https://www.linkedin.com/in/hari-harimukesh-b85b2a384?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   transmission: {
@@ -24,10 +32,10 @@ export const subteamsData = {
     desc: 'Engine, transmission and drivetrain — the heart of the kart.',
     icon: '⏲',
     members: [
-      { name: 'Kavin', role: 'leader', photo: '/assets/kavin.JPG', instagram: 'https://www.instagram.com/kavin.0049?igsh=eHQ1d3ZpOWphZDh2', linkedin: '#' },
+      { name: 'Lekasree', role: 'leader', photo: '/assets/lekasree.jpg', instagram: 'https://www.instagram.com/leka.0?igsh=MWw0cGFwbWY3NDZ4MA==', linkedin: 'https://www.linkedin.com/in/lekasree-k-7306b932b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Kavin', role: 'member', photo: '/assets/kavin.JPG', instagram: 'https://www.instagram.com/kavin.0049?igsh=eHQ1d3ZpOWphZDh2', linkedin: '#' },
       { name: 'Reventhira', role: 'member', photo: '/assets/reventhira.jpeg', instagram: 'https://www.instagram.com/_.reve_17?igsh=MXRudzdnYjZtd3R3Yw==', linkedin: 'https://www.linkedin.com/in/reventhira-vp-571b8728b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-      { name: 'Lekasree', role: 'member', photo: '/assets/lekasree.jpg', instagram: 'https://www.instagram.com/leka.0?igsh=MWw0cGFwbWY3NDZ4MA==', linkedin: 'https://www.linkedin.com/in/lekasree-k-7306b932b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
-      { name: 'Atheesh', role: 'member', photo: '', instagram: 'https://www.instagram.com/atheesh_7?igsh=bDQ3djYxOWplcGUy', linkedin: 'https://www.linkedin.com/in/atheesh-k-a-0a992032a?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+      { name: 'Atheesh', role: 'member', photo: '/assets/atheesh.jpg', instagram: 'https://www.instagram.com/atheesh_7?igsh=bDQ3djYxOWplcGUy', linkedin: 'https://www.linkedin.com/in/atheesh-k-a-0a992032a?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
       { name: 'Hariram', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Yuvan Raaja', role: 'member', photo: '/assets/yuvanraaja.jpg', instagram: 'https://www.instagram.com/yuvaannn._.07?igsh=YW40bzJ0bzQycjZo', linkedin: 'https://www.linkedin.com/in/yuvan-raaja-a-m-709b9b3ab?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
       { name: 'Naveen Kumar', role: 'member', photo: '/assets/naveenkumar.jpg', instagram: 'https://www.instagram.com/nav._mj_s_elena_612?igsh=eTJxOHY1dWFjaXRs', linkedin: 'https://www.linkedin.com/in/naveenkumar-c-5184403b0?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
@@ -36,6 +44,12 @@ export const subteamsData = {
       { name: 'Murali', role: 'member', photo: '/assets/murali.PNG', instagram: '#', linkedin: '#' },
       { name: 'Hari Prasath', role: 'member', photo: '/assets/hariprasath.jpg', instagram: '#', linkedin: '#' },
       { name: 'Divakar', role: 'member', photo: '/assets/divakar.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Ram Prakash', role: 'member', photo: '/assets/ramprakash.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Kamalesh', role: 'member', photo: '/assets/kamalesh.jpeg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   steering: {
@@ -45,6 +59,9 @@ export const subteamsData = {
     members: [
       { name: 'Shree Hariharakumaran', role: 'leader', photo: '/assets/hariharakumaran.jpeg', instagram: 'https://www.instagram.com/_.just.hari?igsh=MTR0dndzbWoyYWEyaA==3', linkedin: 'https://www.linkedin.com/in/shreehariharakumaran-s-baa3b8329?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
       { name: 'Mithunvant', role: 'member', photo: '/assets/mithun.jpg', instagram: 'https://www.instagram.com/mithunn.13?igsh=MXJ4cTJmbDFpMW13ag==', linkedin: 'https://www.linkedin.com/in/mithun-vant-g-r-56b98037b?utm_source=share_via&utm_content=profile&utm_medium=member_android' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   electrical: {
@@ -52,15 +69,19 @@ export const subteamsData = {
     desc: 'Wiring harness, sensors, ECU, and all electrical systems onboard.',
     icon: '⚡',
     members: [
-      { name: 'Atheesh', role: 'leader', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Sowmiyanathan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Harish', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Mohammed Hasan Malik', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Atheesh', role: 'leader', photo: '/assets/atheesh.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Sowmiyanathan', role: 'member', photo: '/assets/sowminathan.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Harish', role: 'member', photo: '/assets/harish.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Mohammed Hasan Malik', role: 'member', photo: '/assets/hasanmalik.JPG', instagram: '#', linkedin: '#' },
       { name: 'Mahadheva', role: 'member', photo: '/assets/mahadeva.jpg', instagram: '#', linkedin: '#' },
       { name: 'Divyaa Shree', role: 'member', photo: '/assets/divyaashree.jpg', instagram: '#', linkedin: '#' },
-      { name: 'Bharanidharan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Srinivas', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Bharanidharan', role: 'member', photo: '/assets/bharanidharan.png', instagram: '#', linkedin: '#' },
+      { name: 'Srinivas', role: 'member', photo: '/assets/srinivas.jpg', instagram: '#', linkedin: '#' },
       { name: 'Akileasshh', role: 'member', photo: '/assets/akilesshh.jpg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'ROLE', role: 'ROLE', years: 'YEAR' }
     ]
   },
   braking: {
@@ -70,15 +91,10 @@ export const subteamsData = {
     members: [
       { name: 'Tharunkumar', role: 'leader', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Afraz Ahamed', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-    ]
-  },
-  solar: {
-    name: 'Solar',
-    desc: 'Energy harvesting, maximum power point tracking and power generation',
-    icon: '🔆',
-    members: [
-      { name: 'Harish', role: 'leader', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Bharanidharan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Sujith Krishnaa', role: 'member', photo: '/assets/sujithkrishna.jpg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'NAME', years: 'NAME' }
     ]
   },
   "suspension and wheel assembly": {
@@ -86,14 +102,17 @@ export const subteamsData = {
     desc: 'Vehicle dynamics, dampening systems and chassis geometry',
     icon: '🔧', 
     members: [
-      { name: 'Dhivinash', role: 'leader', photo: '/assets/dhivinash.jpg', instagram: '#', linkedin: '#' },
+      { name: 'Dhivinash', role: 'member', photo: '/assets/dhivinash.jpg', instagram: '#', linkedin: '#' },
       { name: 'Abrar Rahiman', role: 'member', photo: '/assets/abrar.jpg', instagram: '#', linkedin: '#' },
       { name: 'Joel J Biju', role: 'member', photo: '/assets/joelbiju.jpg', instagram: '#', linkedin: '#' },
       { name: 'Varunesh', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Renimol Benita', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Renimol Benita', role: 'member', photo: '/assets/renimolbenita.jpg', instagram: '#', linkedin: '#' },
       { name: 'Shujith Krishnaa', role: 'member', photo: '/assets/sujithkrishna.jpg', instagram: '#', linkedin: '#' },
-      { name: 'Kowshigaan', role: 'member', photo: '', instagram: '#', linkedin: '#' },
-      { name: 'Sanjay Amirdesh', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Sanjay Amirdesh', role: 'member', photo: '/assets/sanjay.jpg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   autonomous: {
@@ -105,6 +124,11 @@ export const subteamsData = {
       { name: 'Kamesh', role: 'member', photo: '/assets/kamesh.jpg', instagram: '#', linkedin: '#' },
       { name: 'Poojitha', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Gokul', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Mohanaprasanth', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   innovation: {
@@ -118,6 +142,10 @@ export const subteamsData = {
       { name: 'Suriya', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Homan Amrith', role: 'member', photo: '', instagram: '#', linkedin: '#' },
       { name: 'Sivezh', role: 'member', photo: '/assets/sivezh.jpg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
   businessplan: {
@@ -125,9 +153,13 @@ export const subteamsData = {
     desc: 'Cost analysis, investor pitching and project viability',
     icon: '💰',
     members: [
-      { name: 'Harish', role: 'member', photo: '', instagram: '#', linkedin: '#' },
+      { name: 'Harish', role: 'member', photo: '/assets/harish.jpg', instagram: '#', linkedin: '#' },
       { name: 'Lekasree', role: 'member', photo: '/assets/lekasree.jpg', instagram: '#', linkedin: '#' },
       { name: 'Koushik Jeyaram Sethuraman', role: 'member', photo: '/assets/koushik.jpeg', instagram: '#', linkedin: '#' },
+    ],
+    exMembers: [
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' },
+      { name: 'NAME', role: 'ROLE', years: 'YEAR' }
     ]
   },
 };

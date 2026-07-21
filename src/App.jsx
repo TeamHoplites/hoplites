@@ -8,6 +8,8 @@ import Mentors from './pages/Mentors';
 import Sponsors from './pages/Sponsors';
 import Contact from './pages/Contact';
 import LoadingScreen from './components/LoadingScreen';
+import CustomCursor from './components/CustomCursor';
+import PastGallery from './pages/PastGallery';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -17,7 +19,9 @@ function App() {
   const renderPage = () => {
     switch (currentPage) {
       case 'home':
-        return <Home />;
+        return <Home onViewPastGallery={() => { setCurrentPage('past-gallery'); window.scrollTo(0, 0); }} />;
+      case 'past-gallery':
+        return <PastGallery onBack={() => { setCurrentPage('home'); window.scrollTo(0, 0); }} />;
       case 'subteams':
         return (
           <SubTeams
@@ -47,12 +51,13 @@ function App() {
       case 'contact':
         return <Contact />;
       default:
-        return <Home />;
+        return <Home onViewPastGallery={() => { setCurrentPage('past-gallery'); window.scrollTo(0, 0); }} />;
     }
   };
 
   return (
     <>
+      <CustomCursor />
       {isLoading && <LoadingScreen onComplete={() => setIsLoading(false)} />}
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}

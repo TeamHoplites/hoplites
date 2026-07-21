@@ -66,7 +66,7 @@ export default function Contact() {
     <div className="page active" id="contact">
       <div className="page-hero">
         <div className="section-label">Get In Touch</div>
-        <h2 className="section-title" style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
+        <h2 className="section-title" style={{ fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
           Contact Us
         </h2>
         <div className="section-divider"></div>
@@ -80,7 +80,7 @@ export default function Contact() {
             <div className="contact-icon">📍</div>
             <div className="contact-text">
               <div className="contact-label">Location</div>
-              <div className="contact-value" style={{ fontFamily: "'Courier New', Courier, monospace" }}>
+              <div className="contact-value">
                 Sri Krishna College of Engineering And Technology<br />
                 Kuniyamuthur, Coimbatore – 641008<br />
                 Tamil Nadu, India
@@ -92,7 +92,7 @@ export default function Contact() {
             <div className="contact-icon">📞</div>
             <div className="contact-text">
               <div className="contact-label">Phone</div>
-              <div className="contact-value" style={{ fontFamily: "'Courier New', Courier, monospace" }}>
+              <div className="contact-value">
                 +91 99441 39012
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Contact() {
             <div className="contact-icon">✉️</div>
             <div className="contact-text">
               <div className="contact-label">Email</div>
-              <div className="contact-value" style={{ fontFamily: "'Courier New', Courier, monospace" }}>
+              <div className="contact-value">
                 hoplites26.123@gmail.com
               </div>
             </div>
@@ -186,10 +186,12 @@ export default function Contact() {
             </form>
           ) : (
             <div className="form-success" id="formSuccess" style={{ display: 'block' }}>
-              <p style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚔️</p>
-              <p style={{ fontSize: '1.1rem', marginBottom: '0.5rem' }}>Message Sent!</p>
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ width: '44px', height: '44px', margin: '0 auto 1.2rem' }}>
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p style={{ fontSize: '1.2rem', fontWeight: '600', marginBottom: '0.5rem', color: '#fff' }}>Message Sent!</p>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                We'll get back to you soon. Thank you for reaching out to the Hoplites!
+                We'll get back to you soon. Thank you for reaching out to Team Hoplites!
               </p>
             </div>
           )}

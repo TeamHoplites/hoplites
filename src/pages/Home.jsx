@@ -1,8 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function Home({ onViewPastGallery }) {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const galleryImages = [
+    { src: 'gallery/img1.jpg'},
+    { src: 'gallery/img2.jpg'},
+    { src: 'gallery/img3.jpg'},
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [galleryImages.length]);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % galleryImages.length);
+  };
 
   return (
     <div className="page active" id="home">
@@ -11,7 +33,13 @@ export default function Home() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-subtitle">Sri Krishna College of Engineering & Technology</div>
-          <img className="hero-logo-display" src={`${import.meta.env.BASE_URL}team-logo.png`} alt="Hoplites Hero Logo" />
+          <div className="rotating-logo-viewport">
+            <img
+              className="rotating-logo-img"
+              src={`${import.meta.env.BASE_URL}team-logo.png`}
+              alt="Hoplites Hero Logo"
+            />
+          </div>
           <h1 className="hero-title"><span>HOPLITES</span></h1>
           <p className="hero-tagline">E-VEHICLE TEAM</p>
         </div>
@@ -44,23 +72,49 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Photo Gallery */}
+      {/* Photo Gallery Slideshow */}
       <div className="section">
         <div className="section-header">
           <div className="section-label">Our Journey</div>
           <h2 className="section-title">Gallery</h2>
           <div className="section-divider"></div>
         </div>
-        <div className="photos-grid">
-          {Array.from({ length: 8 }).map((_, idx) => (
-            <div key={idx} className="photo-card" style={{ background: 'linear-gradient(135deg,#1a1a1a,#222)' }}>
-              <div className="photo-placeholder">
-                <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: '40px', height: '40px', opacity: 0.3 }}>
-                  <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/>
-                </svg>
+        
+        <div className="slideshow-container">
+          <div className="slideshow-wrapper">
+            {galleryImages.map((img, idx) => (
+              <div
+                key={idx}
+                className={`slide ${idx === currentSlide ? 'active' : ''}`}
+                style={{ backgroundImage: `url(${import.meta.env.BASE_URL}${img.src})` }}
+              >
+                {/* <div className="slide-caption">{img.caption}</div> */}
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <button className="slideshow-arrow prev" onClick={handlePrevSlide}>
+            &#10094;
+          </button>
+          <button className="slideshow-arrow next" onClick={handleNextSlide}>
+            &#10095;
+          </button>
+
+          <div className="slideshow-dots">
+            {galleryImages.map((_, idx) => (
+              <span
+                key={idx}
+                className={`dot ${idx === currentSlide ? 'active' : ''}`}
+                onClick={() => setCurrentSlide(idx)}
+              ></span>
+            ))}
+          </div>
+        </div>
+
+        <div className="gallery-action-container">
+          <button className="gallery-link-btn" onClick={onViewPastGallery}>
+            View past years competition photos &rarr;
+          </button>
         </div>
       </div>
 

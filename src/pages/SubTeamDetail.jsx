@@ -1,6 +1,7 @@
 import React from 'react';
 import { subteamsData } from '../data/subteamsData';
 import Footer from '../components/Footer';
+import SubteamIcon from '../components/SubteamIcon';
 
 const instagramSVG = (
   <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
@@ -34,8 +35,8 @@ export default function SubTeamDetail({ subteamId, onBack }) {
       <div onClick={onBack} className="back-btn">← Back to Sub Teams</div>
       <div className="page-hero" id="subteam-detail-header">
         <div className="section-label" id="subteam-detail-label">DIVISION</div>
-        <h2 className="section-title" id="subteam-detail-title" style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
-          {data.icon} {data.name}
+        <h2 className="section-title" id="subteam-detail-title" style={{ fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.8rem' }}>
+          <SubteamIcon type={subteamId} /> {data.name}
         </h2>
         <div className="section-divider"></div>
         <p style={{ color: 'var(--text-muted)', maxWidth: '500px', margin: '1rem auto 0', fontSize: '0.9rem', lineHeight: '1.7' }} id="subteam-detail-desc">
@@ -78,7 +79,24 @@ export default function SubTeamDetail({ subteamId, onBack }) {
           );
         })}
       </div>
-
+      {data.exMembers && data.exMembers.length > 0 && (
+        <div className="ex-members-section">
+          <div className="section-header" style={{ marginBottom: '2rem' }}>
+            <div className="section-label">ALUMNI REGISTRY</div>
+            <h2 className="section-title" style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)' }}>Ex-Members (2023 - 2026)</h2>
+            <div className="section-divider"></div>
+          </div>
+          <div className="ex-members-grid">
+            {data.exMembers.map((exMember, idx) => (
+              <div key={idx} className="ex-member-card">
+                <div className="ex-member-name">{exMember.name}</div>
+                <div className="ex-member-role">{exMember.role.toUpperCase()}</div>
+                <div className="ex-member-years">{exMember.years}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
       <Footer />
     </div>
   );

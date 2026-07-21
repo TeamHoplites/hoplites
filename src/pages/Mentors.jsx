@@ -2,17 +2,17 @@ import React from 'react';
 import Footer from '../components/Footer';
 
 export default function Mentors() {
-  const mentors = Array.from({ length: 4 }).map((_, idx) => ({
-    name: 'Dr. / Prof. Name',
+  const mentors = Array.from({ length: 1 }).map((_, idx) => ({
+    name: 'Dr. Prof K C Ramya',
     dept: 'Department of Electrical and Electronics Engineering, SKCET',
-    photo: ''
+    photo: '/mentors/hod.jpg'
   }));
 
   return (
     <div className="page active" id="mentors">
       <div className="page-hero">
         <div className="section-label">Guidance & Wisdom</div>
-        <h2 className="section-title" style={{ fontFamily: "'Cinzel Decorative',serif", fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
+        <h2 className="section-title" style={{ fontSize: 'clamp(1.8rem,4vw,2.8rem)', color: '#fff' }}>
           College Mentors
         </h2>
         <div className="section-divider"></div>
