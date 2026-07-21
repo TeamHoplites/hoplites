@@ -4,28 +4,28 @@ import Footer from '../components/Footer';
 export default function PastGallery({ onBack }) {
   const pastPhotos = [
     {
-      src: '#',
-      year: '2026',
-      title: 'Title',
-      desc: 'Desc.'
+      src: 'gallery/img1.jpg',
+      year: '2023',
+      title: 'National Electric Kart Championship',
+      desc: 'Hoplites racing team competing at the FMSCI sanctioned track, pushing the boundaries of electric speed.'
     },
     {
-      src: '#',
-      year: '2026',
-      title: 'Title',
-      desc: 'Desc.'
+      src: 'gallery/img2.jpg',
+      year: '2024',
+      title: 'Powertrain Calibration & Assembly',
+      desc: 'Team members tweaking the dual-motor setups and checking live telemetry logs in the SKCET innovation hangar.'
     },
     {
-      src: '#',
-      year: '2026',
-      title: 'Title',
-      desc: 'Desc.'
+      src: 'gallery/img3.jpg',
+      year: '2025',
+      title: 'International Paddock Trophy',
+      desc: 'Team Hoplites taking the podium for best design and engineering innovations at the electric vehicle trials.'
     },
     {
-      src: '#',
-      year: '2026',
-      title: 'Title',
-      desc: 'Desc.'
+      src: 'assets/competition_1.jpg',
+      year: '2025',
+      title: 'Steering & Chassis Telemetry',
+      desc: 'Aligning sensors and calibrating vehicle dynamics during pre-qualifying track trials.'
     }
   ];
 
