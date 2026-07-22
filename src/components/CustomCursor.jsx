@@ -47,33 +47,43 @@ export default function CustomCursor() {
 
     // Track mouse over interactive/hoverable elements
     const onMouseOver = (e) => {
-      const target = e.target;
+      let target = e.target;
       if (!target) return;
+      if (target.nodeType === 3 || !(target instanceof Element)) {
+        target = target.parentElement;
+      }
+      if (!target || !(target instanceof Element)) return;
 
-      const isInteractive = 
-        target.tagName === 'A' || 
-        target.tagName === 'BUTTON' || 
-        target.closest('a') || 
-        target.closest('button') || 
-        target.closest('.subteam-card') || 
-        target.closest('.photo-card') || 
-        target.closest('.play-btn') || 
-        target.closest('.social-link') ||
-        target.closest('.back-btn') ||
-        window.getComputedStyle(target).cursor === 'pointer';
+      try {
+        const isInteractive = 
+          target.tagName === 'A' || 
+          target.tagName === 'BUTTON' || 
+          (target.closest && (
+            target.closest('a') || 
+            target.closest('button') || 
+            target.closest('.subteam-card') || 
+            target.closest('.photo-card') || 
+            target.closest('.play-btn') || 
+            target.closest('.social-link') ||
+            target.closest('.back-btn')
+          )) ||
+          window.getComputedStyle(target).cursor === 'pointer';
 
-      if (isInteractive) {
-        if (!isHovering) {
-          isHovering = true;
-          ring.classList.add('cursor-hover');
-          dot.classList.add('cursor-hover');
+        if (isInteractive) {
+          if (!isHovering) {
+            isHovering = true;
+            ring.classList.add('cursor-hover');
+            dot.classList.add('cursor-hover');
+          }
+        } else {
+          if (isHovering) {
+            isHovering = false;
+            ring.classList.remove('cursor-hover');
+            dot.classList.remove('cursor-hover');
+          }
         }
-      } else {
-        if (isHovering) {
-          isHovering = false;
-          ring.classList.remove('cursor-hover');
-          dot.classList.remove('cursor-hover');
-        }
+      } catch (err) {
+        // Safe fallback
       }
     };
 
